@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Negocio Dos</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 30px;
+        background: #f7f7f7;
+        text-align: center;
+    }
+    .card {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        max-width: 350px;
+        margin: auto;
+    }
+    button {
+        margin-top: 12px;
+        width: 100%;
+        padding: 12px;
+        font-size: 17px;
+        background: black;
+        color: white;
+        border: none;
+        border-radius: 8px;
+    }
+</style>
+
+<script>
+function copiar(texto) {
+    navigator.clipboard.writeText(texto).then(() => {
+        alert("Copiado: " + texto);
+    });
+}
+</script>
+
+</head>
+<body>
+<div class="card">
+    <h2>Negocio Dos</h2>
+
+    <p><strong>CLABE:</strong><br>987654321098765432</p>
+    <button onclick="copiar('987654321098765432')">Copiar CLABE</button>
+
+    <p><strong>Número de Tarjeta:</strong><br>5555 6666 7777 8888</p>
+    <button onclick="copiar('5555 6666 7777 8888')">Copiar Tarjeta</button>
+</div>
+</body>
+</html>
